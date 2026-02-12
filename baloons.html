@@ -29,13 +29,12 @@
       visibility: hidden;
     }
   </style>
-  <!-- custom js -->
-  <script src="balloons.js"></script>
+
 </head>
 <body>
   <!-- content -->
   <div class="container">
-    <h1 class="greeting animate__animated animate__heartBeat">Happy Birthday!</h1><hr />
+    <h1 class="greeting animate__animated " id="Happy">Happy Birthday!</h1><hr />
     <form role="form">
       <div class="row">
         <div class="col">
@@ -63,6 +62,7 @@
                 <label class="form-check-label" for="blue">Blue balloons</label>
               </div>
             </div>
+            <button type="button" class="btn btn-outline-primary mt-3" id="checker">Checker</button>
                       <button type="button" class="btn btn-outline-primary mt-3" id="submit">Submit</button>
           </div>
         </div>
@@ -74,4 +74,17 @@
       </div>
     </form>
   </div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3 ">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Happy Birthday!</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Wishing you a wonderful day filled with joy and happiness!
+      </div>
+    </div>
+  </div>
+  <!-- custom js -->
+  <script src="balloons.js"></script>
 </body>
