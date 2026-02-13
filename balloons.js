@@ -24,8 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         elem.classList.add("animate__animated", "animate__bounceOutUp");
     }
   });
-});
-  const happy = document.getElementById('Happy');
+    const happy = document.getElementById('Happy');
 
   const red = document.getElementById('red');
   red.addEventListener('mouseenter', function(e){
@@ -68,4 +67,5 @@ document.getElementById('checker').addEventListener('click', function(e){
     blue.checked = false;
     green.checked = false;
   }
+});
 });
